@@ -588,8 +588,8 @@ public class NiceVideoPlayer extends FrameLayout
     public boolean exitFullScreen() {
         if (mCurrentMode == MODE_FULL_SCREEN) {
             NiceUtil.showActionBar(mContext);
-            NiceUtil.scanForActivity(mContext)
-                    .setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+//            NiceUtil.scanForActivity(mContext)
+//                    .setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
             ViewGroup contentView = (ViewGroup) NiceUtil.scanForActivity(mContext)
                     .findViewById(android.R.id.content);
